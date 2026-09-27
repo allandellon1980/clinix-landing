@@ -9,7 +9,7 @@
  * placeholders. Substitua por dados reais (com autorização dos clientes) antes de publicar.
  */
 import { useState, type ReactNode } from "react";
-import clinixLogo from "./assets/clinix-logo.png";
+import clinixLogo from "./clinix-logo.png";
 import {
   ArrowRight,
   BarChart3,

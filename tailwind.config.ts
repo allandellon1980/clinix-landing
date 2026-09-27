@@ -4,7 +4,7 @@ import type { Config } from "tailwindcss";
 // Se o projeto Lovable já tiver um tailwind.config.ts (shadcn), mescle apenas o bloco `extend`.
 export default {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  content: ["./index.html", "./*.{ts,tsx}"],
   theme: {
     container: { center: true, padding: "1rem", screens: { "2xl": "1200px" } },
     extend: {
