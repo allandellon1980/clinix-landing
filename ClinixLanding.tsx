@@ -63,14 +63,14 @@ const NAV = [
 const FEATURES = [
   {
     icon: CalendarDays,
-    title: "Agenda Ortopédica Inteligente",
+    title: "Agenda Inteligente",
     text: "Encaixes rápidos, visão por especialista e por sala e lembretes automáticos que reduzem as ausências.",
     span: "lg:col-span-2",
   },
   {
     icon: FileText,
     title: "Prontuário Eletrônico Especializado",
-    text: "Histórico de exames, laudos e fichas personalizadas para traumatologia e ortopedia.",
+    text: "Histórico de exames, laudos e fichas personalizadas para cada especialidade.",
     span: "",
   },
   {
@@ -99,14 +99,14 @@ const TESTIMONIALS = [
     quote:
       "Saímos da agenda de papel para o Clinix em uma semana. As faltas caíram muito depois dos lembretes automáticos e a recepção parou de viver no telefone.",
     name: "Dr. Nome Sobrenome",
-    role: "Ortopedista · Clínica Exemplo",
+    role: "Clínico geral · Clínica Exemplo",
     metric: "−38% de faltas",
   },
   {
     quote:
-      "O prontuário com fichas de ortopedia me economiza tempo em cada consulta. Consigo ver exames e evolução do paciente numa tela só.",
+      "O prontuário com fichas da minha especialidade me economiza tempo em cada consulta. Consigo ver exames e evolução do paciente numa tela só.",
     name: "Dra. Nome Sobrenome",
-    role: "Traumatologista · Consultório Exemplo",
+    role: "Dermatologista · Consultório Exemplo",
     metric: "+2h livres por dia",
   },
   {
@@ -123,7 +123,7 @@ const PLANS = [
     name: "Starter",
     desc: "Para o especialista que atende sozinho.",
     monthly: 99.9,
-    features: ["1 profissional", "Agenda + lembretes por WhatsApp", "Prontuário ortopédico", "Financeiro básico", "Suporte via WhatsApp"],
+    features: ["1 profissional", "Agenda + lembretes por WhatsApp", "Prontuário eletrônico", "Financeiro básico", "Suporte via WhatsApp"],
     featured: false,
   },
   {
@@ -156,8 +156,8 @@ const PLANS = [
 
 const FAQ = [
   {
-    q: "O Clinix atende somente ortopedia ou outras especialidades também?",
-    a: "O Clinix nasceu para ortopedia e traumatologia, com fichas e fluxos pensados para essas rotinas, mas atende qualquer especialidade. Você ativa os modelos de prontuário e procedimentos de cada área e mantém tudo na mesma agenda e no mesmo financeiro.",
+    q: "O Clinix atende quais especialidades?",
+    a: "O Clinix atende clínicas e consultórios de qualquer especialidade: clínica geral, ortopedia, cardiologia, dermatologia, pediatria, fisioterapia e muitas outras. Você ativa os modelos de prontuário e procedimentos de cada área e mantém tudo na mesma agenda e no mesmo financeiro.",
   },
   {
     q: "Como funciona a migração dos meus dados atuais para o Clinix?",
@@ -314,11 +314,11 @@ function Gauge({ value }: { value: number }) {
 }
 
 const TODAY = [
-  { h: "08:30", n: "Marina Costa", p: "Retorno · LCA joelho", c: "Unimed", s: "Concluído", tone: "text-clx-success bg-clx-success/10" },
-  { h: "09:00", n: "Paulo Mendes", p: "Consulta · Lombar", c: "Particular", s: "Em atendimento", tone: "text-clx-brand-light bg-clx-brand/15" },
-  { h: "09:30", n: "Luiza Rocha", p: "Infiltração · Ombro", c: "Bradesco", s: "Em espera", tone: "text-clx-warning bg-clx-warning/10" },
-  { h: "10:00", n: "Rafael Nunes", p: "1ª consulta · Tornozelo", c: "SulAmérica", s: "Confirmado", tone: "text-clx-info bg-clx-info/10" },
-  { h: "10:30", n: "Jorge Lima", p: "Pós-op · Quadril", c: "Unimed", s: "Confirmado", tone: "text-clx-info bg-clx-info/10" },
+  { h: "08:30", n: "Marina Costa", p: "Retorno · Cardiologia", c: "Unimed", s: "Concluído", tone: "text-clx-success bg-clx-success/10" },
+  { h: "09:00", n: "Paulo Mendes", p: "Consulta · Clínica geral", c: "Particular", s: "Em atendimento", tone: "text-clx-brand-light bg-clx-brand/15" },
+  { h: "09:30", n: "Luiza Rocha", p: "Exame · Ultrassom", c: "Bradesco", s: "Em espera", tone: "text-clx-warning bg-clx-warning/10" },
+  { h: "10:00", n: "Rafael Nunes", p: "1ª consulta · Dermatologia", c: "SulAmérica", s: "Confirmado", tone: "text-clx-info bg-clx-info/10" },
+  { h: "10:30", n: "Jorge Lima", p: "Retorno · Ortopedia", c: "Unimed", s: "Confirmado", tone: "text-clx-info bg-clx-info/10" },
 ];
 
 function DashboardMockup() {
@@ -353,7 +353,7 @@ function DashboardMockup() {
             <span className="grid h-8 w-8 place-items-center rounded-full bg-clx-brand/20 text-[11px] font-semibold text-clx-brand-light">RA</span>
             <div className="min-w-0">
               <p className="truncate text-[12px] text-clx-ink">Dr. R. Almeida</p>
-              <p className="truncate text-[11px] text-clx-subtle">Ortopedia</p>
+              <p className="truncate text-[11px] text-clx-subtle">Clínica geral</p>
             </div>
           </div>
         </aside>
@@ -493,13 +493,13 @@ function Hero() {
       <div className="container relative">
         <div className="mx-auto max-w-4xl text-center">
           <span className="eyebrow animate-fade-up">
-            <Zap className="h-3.5 w-3.5 text-clx-brand-light" />O SaaS definitivo para clínicas ortopédicas e de saúde
+            <Zap className="h-3.5 w-3.5 text-clx-brand-light" />O SaaS definitivo para clínicas e consultórios
           </span>
           <h1
             className="mt-6 animate-fade-up text-[38px] font-semibold leading-[1.05] text-gradient sm:text-[56px] lg:text-[64px]"
             style={{ animationDelay: ".08s" }}
           >
-            Sua clínica ortopédica organizada, com agendamento ágil e faturamento sob controle.
+            Sua clínica organizada, com agendamento ágil e faturamento sob controle.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl animate-fade-up text-base leading-7 text-clx-muted sm:text-lg sm:leading-8" style={{ animationDelay: ".16s" }}>
             Simplifique o atendimento, reduza o tempo de espera dos pacientes e tenha prontuários especializados e gestão financeira completa em uma
@@ -715,23 +715,23 @@ const FLOW: Col[] = [
     tone: "text-clx-warning",
     dot: "bg-clx-warning",
     items: [
-      { n: "Luiza Rocha", p: "Infiltração · Ombro D", t: "12 min" },
-      { n: "Rafael Nunes", p: "1ª consulta · Tornozelo", t: "4 min" },
+      { n: "Luiza Rocha", p: "Exame · Ultrassom", t: "12 min" },
+      { n: "Rafael Nunes", p: "1ª consulta · Dermatologia", t: "4 min" },
     ],
   },
   {
     title: "Em Atendimento",
     tone: "text-clx-brand-light",
     dot: "bg-clx-brand",
-    items: [{ n: "Paulo Mendes", p: "Consulta · Lombar", t: "Sala 2" }],
+    items: [{ n: "Paulo Mendes", p: "Consulta · Clínica geral", t: "Sala 2" }],
   },
   {
     title: "Concluído",
     tone: "text-clx-success",
     dot: "bg-clx-success",
     items: [
-      { n: "Marina Costa", p: "Retorno · LCA", t: "08:52" },
-      { n: "Jorge Lima", p: "Pós-op · Quadril", t: "08:31" },
+      { n: "Marina Costa", p: "Retorno · Cardiologia", t: "08:52" },
+      { n: "Jorge Lima", p: "Retorno · Ortopedia", t: "08:31" },
     ],
   },
 ];
@@ -1059,7 +1059,7 @@ function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-6 text-clx-muted">
-              Gestão completa para clínicas de ortopedia, traumatologia e saúde: agenda, prontuário, financeiro e indicadores.
+              Gestão completa para clínicas e consultórios de todas as especialidades: agenda, prontuário, financeiro e indicadores.
             </p>
             <div className="mt-6 flex gap-2">
               {[

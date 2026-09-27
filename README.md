@@ -1,6 +1,6 @@
 # Clinix — Landing Page
 
-Landing page do **Clinix**, SaaS de gestão para clínicas de ortopedia, traumatologia e saúde.
+Landing page do **Clinix**, SaaS de gestão para clínicas e consultórios de todas as especialidades.
 React 18 + Vite + Tailwind CSS 3 + lucide-react. Tema escuro com vidro, brilho violeta e grão sutil.
 
 ![Prévia do hero](preview-hero.png)
@@ -17,7 +17,7 @@ npm run build    # gera dist/
 
 | Arquivo | O que é |
 | --- | --- |
-| `ClinixLanding.tsx` | A página inteira: header, hero com mockup do dashboard, logos, problema × solução, recursos, para ortopedistas, fluxo do paciente, depoimentos, preços, FAQ, CTA final e rodapé |
+| `ClinixLanding.tsx` | A página inteira: header, hero com mockup do dashboard, problema × solução, recursos, especialidades, fluxo do paciente, depoimentos, preços, FAQ, CTA final e rodapé |
 | `index.css` | Fontes (Inter / Inter Tight), `.glass`, `.btn-primary`, `.btn-ghost`, `.eyebrow`, `.grain`, `.bg-grid`, `.text-gradient` |
 | `tailwind.config.ts` | Tokens de cor `clx-*`, fontes, sombras e animações |
 | `COMO-USAR-NO-LOVABLE.md` | Como levar a página para um projeto Lovable |
